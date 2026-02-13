@@ -1,4 +1,4 @@
-# 🚀 30 Days of AWS + Terraform Challenge
+# 🚀 30 Days of AWS Terraform Challenge
 
 ## 📌 About This Repository
 This repository documents my 30-day journey of learning AWS Infrastructure using Terraform.
