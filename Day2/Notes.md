@@ -83,7 +83,7 @@ Terraform uses version constraints to control which version of Terraform Core or
 | `>=`     | Minimum version |
 | `~>`     | Safe upgrade within the same major version |
 
-## 🔹 5. Provider Initialization
+##  🔹 5. Provider Initialization
 
 Command:
 ```bash
@@ -101,7 +101,7 @@ terraform init
 
 - Creates lock file
 
-## 🔹 6. Example Resource – AWS VPC
+##  🔹 6. Example Resource – AWS VPC
 ```hcl
 provider "aws" {
   region = "us-east-1"
@@ -112,7 +112,7 @@ resource "aws_vpc" "example" {
 }
 ```
 
-## 🔹 7. Terraform Plan
+##  🔹 7. Terraform Plan
 
 Command:
 ```bash
