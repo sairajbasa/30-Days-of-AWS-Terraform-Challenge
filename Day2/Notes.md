@@ -73,29 +73,36 @@ terraform {
 
 ```
 
-Version Operators
-Operator	Meaning
-=	Exact version
->=	Minimum version
-~>	Safe upgrade within same major version
-🔹 5. Provider Initialization
+## 📘 Version Operators
+
+Terraform uses version constraints to control which version of Terraform Core or Providers should be used.
+
+| Operator | Meaning |
+|----------|----------|
+| `=`      | Exact version |
+| `>=`     | Minimum version |
+| `~>`     | Safe upgrade within the same major version |
+
+## 🔹 5. Provider Initialization
 
 Command:
-
+```bash
 terraform init
+```
 
 
-What it does:
+# What it does:
 
-Downloads required providers
+- Downloads required providers
 
-Creates .terraform directory
+- Creates .terraform directory
 
-Initializes backend
+- Initializes backend
 
-Creates lock file
+- Creates lock file
 
-🔹 6. Example Resource – AWS VPC
+##🔹 6. Example Resource – AWS VPC
+```hcl
 provider "aws" {
   region = "us-east-1"
 }
@@ -103,29 +110,32 @@ provider "aws" {
 resource "aws_vpc" "example" {
   cidr_block = "10.0.0.0/16"
 }
+```
 
-🔹 7. Terraform Plan
+##🔹 7. Terraform Plan
 
 Command:
-
+```bash
 terraform plan
+```
 
 
-Purpose:
+## Purpose:
 
-Compares configuration with actual infrastructure
+- Compares configuration with actual infrastructure
 
-Shows changes before applying
+- Shows changes before applying
 
-Does NOT create resources
+- Does NOT create resources
 
-Example Output Meaning:
-
+## Example Output Meaning:
+```text
 1 to add
 
 0 to change
 
 0 to destroy
+```
 
 ## 📌 Key Takeaways
 
