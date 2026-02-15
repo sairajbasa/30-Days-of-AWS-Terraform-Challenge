@@ -70,3 +70,71 @@ terraform {
     }
   }
 }
+
+```
+
+Version Operators
+Operator	Meaning
+=	Exact version
+>=	Minimum version
+~>	Safe upgrade within same major version
+🔹 5. Provider Initialization
+
+Command:
+
+terraform init
+
+
+What it does:
+
+Downloads required providers
+
+Creates .terraform directory
+
+Initializes backend
+
+Creates lock file
+
+🔹 6. Example Resource – AWS VPC
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_vpc" "example" {
+  cidr_block = "10.0.0.0/16"
+}
+
+🔹 7. Terraform Plan
+
+Command:
+
+terraform plan
+
+
+Purpose:
+
+Compares configuration with actual infrastructure
+
+Shows changes before applying
+
+Does NOT create resources
+
+Example Output Meaning:
+
+1 to add
+
+0 to change
+
+0 to destroy
+
+## 📌 Key Takeaways
+
+- Providers are required to interact with cloud platforms.
+
+- Terraform Core and Providers are versioned independently.
+
+- Always lock versions in production environments.
+
+- terraform init prepares the working directory.
+
+- terraform plan previews infrastructure changes safely.
