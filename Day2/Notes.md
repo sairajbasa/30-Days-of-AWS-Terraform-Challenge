@@ -101,7 +101,7 @@ terraform init
 
 - Creates lock file
 
-##🔹 6. Example Resource – AWS VPC
+## 🔹 6. Example Resource – AWS VPC
 ```hcl
 provider "aws" {
   region = "us-east-1"
@@ -112,7 +112,7 @@ resource "aws_vpc" "example" {
 }
 ```
 
-##🔹 7. Terraform Plan
+## 🔹 7. Terraform Plan
 
 Command:
 ```bash
